@@ -1,6 +1,5 @@
-65/ 100
+130/ 100
 Last update Tue May 19 14:00:51 2015 -0700
--20: late
 -----------------------------------------------------
 [1]  Input redirection from an existant file (25)
 
@@ -15,9 +14,6 @@ Last update Tue May 19 14:00:51 2015 -0700
 
 -----------------------------------------------------
 [5]  Command with more than one pipe (15)
-  -15: Does not work!
-      1       4      43
-celik$Process ended.
 
 -----------------------------------------------------
 [6]  Input redirection with piping (5)
@@ -31,7 +27,7 @@ celik$Process ended.
 -----------------------------------------------------
   Extra 1: <<< (20)
 celik$Process ended.
-  -20: Does not work!
+  -10: Does not work for more than one word
 
 -----------------------------------------------------
   Extra 2 (20)
@@ -42,7 +38,3 @@ cat: extra2_2r: No such file or directory
 cat: extra2_2r: No such file or directory
 cat: extra2_2a: No such file or directory
 celik$Process ended.
-  -5: 1> Does not work!
-  -5: 1>> Does not work!
-  -5: 2> Does not work!
-  -5: 2>> Does not work!
