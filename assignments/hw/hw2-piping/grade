@@ -1,40 +1,44 @@
-130/ 100
+105/ 100
 Last update Tue May 19 14:00:51 2015 -0700
------------------------------------------------------
+
+ -25: memory leak found in valgrind
+==37829== 26 (16 direct, 10 indirect) bytes in 1 blocks are definitely lost in loss record 2 of 2 ==3│  37829== definitely lost: 16 bytes in 1 blocks
+
+  -----------------------------------------------------
 [1]  Input redirection from an existant file (25)
 
------------------------------------------------------
+  -----------------------------------------------------
 [2]  Output redirection (>) to an non-existant file (15)
 
------------------------------------------------------
+  -----------------------------------------------------
 [3]  Output append (>>) to an existing file (10)
 
------------------------------------------------------
+  -----------------------------------------------------
 [4]  Command with one pipe (15)
 
------------------------------------------------------
+  -----------------------------------------------------
 [5]  Command with more than one pipe (15)
 
------------------------------------------------------
+  -----------------------------------------------------
 [6]  Input redirection with piping (5)
 
------------------------------------------------------
+  -----------------------------------------------------
 [7]  Output redirection and piping (5)
 
------------------------------------------------------
+  -----------------------------------------------------
 [8]  Input redirection, output redirection, and piping (10)
 
------------------------------------------------------
-  Extra 1: <<< (20)
-celik$Process ended.
+  -----------------------------------------------------
+Extra 1: <<< (20)
+  celik$Process ended.
   -10: Does not work for more than one word
 
------------------------------------------------------
-  Extra 2 (20)
-extra2_1r
-extra2_1r
-extra2_1a
-cat: extra2_2r: No such file or directory
-cat: extra2_2r: No such file or directory
-cat: extra2_2a: No such file or directory
-celik$Process ended.
+  -----------------------------------------------------
+Extra 2 (20)
+  extra2_1r
+  extra2_1r
+  extra2_1a
+  cat: extra2_2r: No such file or directory
+  cat: extra2_2r: No such file or directory
+  cat: extra2_2a: No such file or directory
+  celik$Process ended.
